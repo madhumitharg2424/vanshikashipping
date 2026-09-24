@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { 
   Box, Anchor, Truck, Briefcase, 
-  ShoppingCart, Repeat, FileCheck, Map, 
-  Warehouse 
+  ShoppingCart, FileCheck, Map, Hammer
 } from 'lucide-react';
 
 const servicesList = [
@@ -32,11 +31,6 @@ const servicesList = [
     image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=600"
   },
   {
-    title: "Door-to-Door Services via Multimodal Transport",
-    icon: <Repeat size={32} className="text-gold" />,
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600"
-  },
-  {
     title: "In-House Customs Clearance",
     icon: <FileCheck size={32} className="text-gold" />,
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=600"
@@ -47,9 +41,9 @@ const servicesList = [
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=600"
   },
   {
-    title: "3PL Warehousing, Packing & Surveys",
-    icon: <Warehouse size={32} className="text-gold" />,
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=600"
+    title: "Container Fabrication",
+    icon: <Hammer size={32} className="text-gold" />,
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600"
   }
 ];
 
