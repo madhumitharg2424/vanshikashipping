@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4B168C;
+  --color-primary-dark: #3A0D6E;
+  --color-gold: #C89B2D;
+  --color-gold-light: #E6B84D;
+  --color-lavender: #F8F7FC;
+  --color-dark: #1F1F1F;
+  --font-sans: "Poppins", sans-serif;
+}
+
+@utility text-gradient {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+}
+
+@utility bg-gradient-gold {
+  background-image: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+}
+
+@utility hover-lift {
+  transition-property: transform, box-shadow;
+  transition-duration: 300ms;
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89B2D;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4B168C;
+}
+
+/* Hide scrollbar for gallery if needed */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
