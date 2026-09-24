@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Highlights from './components/Highlights';
 import About from './components/About';
 import Services from './components/Services';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import FloatingButtons from './components/FloatingButtons';
 import Footer from './components/Footer';
@@ -36,3 +35,4 @@ function App() {
 }
 
 export default App;
+
